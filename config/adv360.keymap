@@ -7,8 +7,8 @@
 / {
     behaviors {
         #include "macros.dtsi"
-      #include "version.dtsi"
-      #ifndef VERSION_MACRO
+        #include "version.dtsi"
+        #ifndef VERSION_MACRO
 
         macro_ver: macro_ver {
             compatible = "zmk,behavior-macro";
@@ -40,7 +40,7 @@
             bindings = <
 &kp EQUAL  &kp N1            &kp N2          &kp N3       &kp N4       &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7       &kp N8       &kp N9           &kp N0      &kp MINUS
 &kp TAB    &kp SINGLE_QUOTE  &kp COMMA       &kp PERIOD   &kp P        &kp Y   &none                                                    &none      &kp F   &kp G        &kp C        &kp R            &kp L       &kp BSLH
-&kp ESC    &mt LWIN A        &mt LEFT_ALT O  &mt LSHFT E  &mt RCTRL U  &kp I   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D   &mt RCTRL H  &mt RSHFT T  &mt RIGHT_ALT N  &mt RWIN S  &kp SLASH
+&kp ESC    &hm LWIN A        &hm LEFT_ALT O  &hm LSHFT E  &hm RCTRL U  &kp I   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D   &hm RCTRL H  &hm RSHFT T  &hm RIGHT_ALT N  &hm RWIN S  &kp SLASH
 &kp LSHFT  &kp SEMICOLON     &kp Q           &kp J        &kp K        &kp X                        &kp HOME      &kp PG_UP                        &kp B   &kp M        &kp W        &kp V            &kp Z       &kp RSHFT
 &mo 2      &kp GRAVE         &kp CAPS        &kp LEFT     &kp RIGHT            &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT         &kp RBKT    &mo 2
             >;
