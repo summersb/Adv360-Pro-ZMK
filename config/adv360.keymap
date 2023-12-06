@@ -39,10 +39,10 @@
         default_layer {
             bindings = <
 &kp EQUAL  &kp N1            &kp N2          &kp N3       &kp N4       &kp N5  &tog 1                                                    &mo 3      &kp N6  &kp N7       &kp N8       &kp N9           &kp N0      &kp MINUS
-&kp TAB    &kp SINGLE_QUOTE  &kp COMMA       &kp PERIOD   &kp P        &kp Y   &kp LC(V)                                                 &none      &kp F   &kp G        &kp C        &kp R            &kp L       &kp SLASH
-&kp ESC    &hm LWIN A        &hm LEFT_ALT O  &hm LSHFT E  &hm RCTRL U  &kp I   &kp LC(C)  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D   &hm RCTRL H  &hm RSHFT T  &hm RIGHT_ALT N  &hm RWIN S  &kp BACKSLASH
+&kp TAB    &kp SINGLE_QUOTE  &kp COMMA       &kp PERIOD   &kp P        &kp Y   &kp LC(V)                                                 &kp F11    &kp F   &kp G        &kp C        &kp R            &kp L       &kp SLASH
+&kp ESC    &hm LWIN A        &hm LEFT_ALT O  &hm LSHFT E  &hm RCTRL U  &kp I   &kp LC(C)  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp F12    &kp D   &hm RCTRL H  &hm RSHFT T  &hm RIGHT_ALT N  &hm RWIN S  &kp BACKSLASH
 &kp LSHFT  &kp SEMICOLON     &kp Q           &kp J        &kp K        &kp X                         &kp HOME      &kp PG_UP                        &kp B   &kp M        &kp W        &kp V            &kp Z       &kp RSHFT
-&mo 2      &kp GRAVE         &kp CAPS        &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT         &kp RBKT    &mo 2
+&tog 4     &kp GRAVE         &kp CAPS        &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT         &kp RBKT    &mo 2
             >;
         };
 
@@ -73,6 +73,16 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &kp F1       &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &trans   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans       &trans  &trans  &trans  &trans  &trans                                      &kp F11  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &kp LC(F12)  &kp F9  &kp F5  &kp F7  &trans  &trans  &trans  &trans      &trans  &trans  &kp F12  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans       &trans  &trans  &trans  &trans                  &trans      &trans                   &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans       &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans   &trans
             >;
         };
     };
