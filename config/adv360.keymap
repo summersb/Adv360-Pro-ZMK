@@ -79,11 +79,11 @@
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&to 5  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
 
-        layer_4 {
+        Debug {
             bindings = <
 &trans  &kp F1      &kp F2           &kp F3      &kp F4      &kp F5  &trans                                      &trans   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &kp LC(F5)  &kp LS(LC(F10))  &kp LS(F8)  &kp LA(F8)  &trans  &trans                                      &kp F11  &trans  &trans  &trans  &trans  &trans   &trans
@@ -91,6 +91,20 @@
 &trans  &trans      &trans           &kp F7      &trans      &trans                  &trans      &trans                   &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans      &trans           &trans      &trans              &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans   &trans
             >;
+
+            label = "debugging";
+        };
+
+        QWERTY {
+            bindings = <
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp NUMBER_7  &kp N8     &kp NUMBER_9      &kp NUMBER_0  &kp MINUS
+&trans     &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U         &kp I      &kp O             &kp P         &kp BSLH
+&trans     &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J         &kp K      &kp L             &kp COLON     &kp SQT
+&trans     &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M         &kp COMMA  &kp PERIOD        &kp SLASH     &kp RSHFT
+&none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP        &kp DOWN   &kp LEFT_BRACKET  &kp RBKT      &mo 2
+            >;
+
+            label = "qwerty";
         };
     };
 };
