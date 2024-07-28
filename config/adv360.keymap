@@ -69,7 +69,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &kp F11  &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &kp F12  &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                   &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans   &trans
+&tog 5  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans   &trans
             >;
         };
 
