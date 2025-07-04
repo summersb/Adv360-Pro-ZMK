@@ -8,7 +8,7 @@
 / {
     behaviors {
         #include "macros.dtsi"
-      #include "version.dtsi"
+        #include "version.dtsi"
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -24,6 +24,17 @@
             label = "Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LSHFT>, <&kp CAPSLOCK>;
+        };
+        clear_layers: behavior {
+          compatible = "zmk,behavior-macro";
+          label = "Clear_Layers";
+          #binding-cells = <0>;
+          bindings = <
+            &deactivate_layer 1
+            &deactivate_layer 2
+            &deactivate_layer 3
+            &deactivate_layer 4
+          >;
         };
     };
 
@@ -54,7 +65,7 @@
             bindings = <
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                      &mo 3    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &kp F11  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &to 0   &tog 4  &tog 5  &tog 6  &trans  &trans  &trans  &trans      &trans  &trans  &kp F12  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &clear_layers   &tog 4  &tog 5  &tog 6  &trans  &trans  &trans  &trans      &trans  &trans  &kp F12  &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                   &trans  &trans  &trans  &trans  &trans   &trans
 &tog 5  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &to 6    &trans
             >;
