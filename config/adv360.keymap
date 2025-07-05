@@ -26,17 +26,35 @@
             bindings = <&kp LSHFT>, <&kp CAPSLOCK>;
         };
 
+        layer_off_4: behavior {
+            compatible = "zmk,behavior-layer-toggle";
+            label = "LAYER_OFF_4";
+            layer = <4>;
+            flavor = "off";
+        };
+
+        layer_off_5: behavior {
+            compatible = "zmk,behavior-layer-toggle";
+            label = "LAYER_OFF_5";
+            layer = <5>;
+            flavor = "off";
+        };
+
+        layer_off_6: behavior {
+            compatible = "zmk,behavior-layer-toggle";
+            label = "LAYER_OFF_6";
+            layer = <6>;
+            flavor = "off";
+        };
+
         clear_layers: behavior {
           compatible = "zmk,behavior-macro";
           label = "Clear_Layers";
           #binding-cells = <0>;
           bindings = <
-            &layer_off 1
-            &layer_off 2
-            &layer_off 3
-            &layer_off 4
-            &layer_off 5
-            &layer_off 6
+            &layer_off_4
+            &layer_off_5
+            &layer_off_6
             &to 0
           >;
         };
