@@ -26,21 +26,21 @@
             bindings = <&kp LSHFT>, <&kp CAPSLOCK>;
         };
 
-        layer_off_4: behavior {
+        layer_off_4: behavior_4 {
             compatible = "zmk,behavior-layer-toggle";
             label = "LAYER_OFF_4";
             layer = <4>;
             flavor = "off";
         };
 
-        layer_off_5: behavior {
+        layer_off_5: behavior_5 {
             compatible = "zmk,behavior-layer-toggle";
             label = "LAYER_OFF_5";
             layer = <5>;
             flavor = "off";
         };
 
-        layer_off_6: behavior {
+        layer_off_6: behavior_6 {
             compatible = "zmk,behavior-layer-toggle";
             label = "LAYER_OFF_6";
             layer = <6>;
