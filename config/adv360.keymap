@@ -25,17 +25,19 @@
             #binding-cells = <0>;
             bindings = <&kp LSHFT>, <&kp CAPSLOCK>;
         };
+
         clear_layers: behavior {
           compatible = "zmk,behavior-macro";
           label = "Clear_Layers";
           #binding-cells = <0>;
           bindings = <
-            &deactivate_layer 1
-            &deactivate_layer 2
-            &deactivate_layer 3
-            &deactivate_layer 4
-            &deactivate_layer 5
-            &deactivate_layer 6
+            &layer_off 1
+            &layer_off 2
+            &layer_off 3
+            &layer_off 4
+            &layer_off 5
+            &layer_off 6
+            &to 0
           >;
         };
     };
