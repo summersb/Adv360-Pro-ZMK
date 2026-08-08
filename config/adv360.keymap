@@ -10,12 +10,22 @@
         #include "macros.dtsi"
         #include "version.dtsi"
 
+    hm_shift: homerow_mods_shift {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_SHIFT";
+        #binding-cells = <2>;
+        tapping-term-ms = <160>;
+        quick-tap-ms = <150>;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+    };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <160>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
@@ -45,7 +55,7 @@
             bindings = <
 &kp EQUAL     &kp N1            &kp N2          &kp N3       &kp N4       &kp N5  &tog 1                                                           &mo 2      &kp N6  &kp N7       &kp N8       &kp N9           &kp N0      &kp MINUS
 &kp TAB       &kp SINGLE_QUOTE  &kp COMMA       &kp PERIOD   &kp P        &kp Y   &kp LC(V)                                                        &kp F11    &kp F   &kp G        &kp C        &kp R            &kp L       &kp SLASH
-&kp ESC       &hm LWIN A        &hm LEFT_ALT O  &hm LSHFT E  &hm RCTRL U  &kp I   &kp LC(C)  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &kp RCTRL  &kp F12    &kp D   &hm RCTRL H  &hm RSHFT T  &hm RIGHT_ALT N  &hm RWIN S  &kp BACKSLASH
+&kp ESC       &hm LWIN A        &hm LEFT_ALT O  &hm_shift LSHFT E  &hm RCTRL U  &kp I   &kp LC(C)  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &kp RCTRL  &kp F12    &kp D   &hm RCTRL H  &hm_shift RSHFT T  &hm RIGHT_ALT N  &hm RWIN S  &kp BACKSLASH
 &kp CAPSLOCK  &kp SEMICOLON     &kp Q           &kp J        &kp K        &kp X                                &kp HOME      &kp PG_UP                        &kp B   &kp M        &kp W        &kp V            &kp Z       &kp RSHFT
 &tog 3        &kp GRAVE         &kp CAPS        &kp LEFT     &kp RIGHT            &kp BSPC   &kp DEL           &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP       &kp DOWN     &kp LBKT         &kp RBKT    &mo 6
             >;
