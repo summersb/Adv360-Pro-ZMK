@@ -57,7 +57,7 @@
 &kp TAB       &kp SINGLE_QUOTE  &kp COMMA       &kp PERIOD         &kp P        &kp Y   &kp LC(V)                                                        &kp F11    &kp F   &kp G        &kp C              &kp R            &kp L     &kp SLASH
 &kp ESC       &kp A             &hm LEFT_ALT O  &hm_shift LSHFT E  &hm RCTRL U  &kp I   &kp LC(C)  &kp LEFT_CONTROL  &kp LALT      &kp LGUI   &kp RCTRL  &kp F12    &kp D   &hm RCTRL H  &hm_shift RSHFT T  &hm RIGHT_ALT N  &kp S     &kp BACKSLASH
 &kp CAPSLOCK  &kp SEMICOLON     &kp Q           &kp J              &kp K        &kp X                                &kp HOME      &kp PG_UP                        &kp B   &kp M        &kp W              &kp V            &kp Z     &kp RSHFT
-&tog 3        &kp A             &kp CAPS        &kp LEFT           &kp RIGHT            &kp BSPC   &kp DEL           &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP       &kp DOWN           &kp LBKT         &kp RBKT  &mo 6
+&tog 3        &kp GRAVE         &kp CAPS        &kp LEFT           &kp RIGHT            &kp BSPC   &kp DEL           &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP       &kp DOWN           &kp LBKT         &kp RBKT  &mo 6
             >;
         };
 
